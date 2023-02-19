@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-TOKEN = 'MTA3Njk4NTg0MDA4Mjg4Njc1OA.GBcAB9.CS2TYGXZJMUX_kN9kFMYdAB4D4tU6CaQmCPH-E'
+TOKEN = 'Discord Bot Token'
 intents = discord.Intents.default()
 intents.message_content = True
 
@@ -25,7 +25,7 @@ async def on_ready():
 
 @client.command()
 async def hello(ctx):
-    channel = client.get_channel(83316959134879744)
+    channel = client.get_channel(channelID)
     await channel.send(f'hello there {ctx.author.mention}')
     
     
